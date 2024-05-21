@@ -29,6 +29,5 @@ public class ApplicationUser : IdentityUser
     [Required(ErrorMessage = "Postnummer er påkrævet")]
     public string ZipCode { get; set; } = null!;
     public IEnumerable<Track>? Tracks { get; set; }
-    public required User user { get; set; }
 }
 

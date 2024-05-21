@@ -1,4 +1,5 @@
 using DcHRally.Models;
+using DcHRally.Models;
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 using RallyBaneTest.Models;
@@ -12,16 +13,12 @@ public class DcHRallyIdentityDbContext : IdentityDbContext<ApplicationUser>
     {
     }
     public DbSet<Track> Tracks { get; set; }
-    public DbSet<Category> Categories { get; set; }
 
-    //protected override void OnModelCreating(ModelBuilder builder)
-    //{
-    //    base.OnModelCreating(builder);
-    //    builder.Entity<Track>()
-    //        .HasOne(t => t.User)
-    //        .WithMany(u => u.Tracks);
-
-    //    builder.Entity<Category>()
-    //        .ToTable("Categories");
-    //}
+    protected override void OnModelCreating(ModelBuilder builder)
+    {
+        base.OnModelCreating(builder);
+        builder.Entity<Track>()
+            .HasOne(t => t.User)
+            .WithMany(u => u.Tracks);
+    }
 }
