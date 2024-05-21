@@ -5,22 +5,22 @@ namespace DcHRally.Models
 {
     public class TrackRepository : ITrackRepository
     {
-        private readonly RallyDbContext _dbContext;
-        public TrackRepository(RallyDbContext dbContext)
+        private readonly RallyDbContext _rallyDbContext;
+        public TrackRepository(RallyDbContext rallyDbContext)
         {
-            _dbContext = dbContext;
+            _rallyDbContext = rallyDbContext;
         }
         public IEnumerable<Track> AllTracks
         {
             get
             {
-                return _dbContext.Tracks.Include(t => t.UserId);
+                return _rallyDbContext.Tracks.Include(t => t.User);
             }
         }
 
         public Track? GetTrackById(int trackId)
         {
-            return _dbContext.Tracks.FirstOrDefault(t => t.TrackId == trackId);
+            return _rallyDbContext.Tracks.FirstOrDefault(t => t.TrackId == trackId);
         }
     }
 }

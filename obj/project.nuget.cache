@@ -2,7 +2,7 @@
   "version": 2,
   "dgSpecHash": "tcjsZ2SueVkEQxgBPfNb+XD2nl8Zugsi/Kl1TkSlBjpRymVlEiULMjUD+ZtUyrz/uDTGLdBs9SaBM37vGY85ew==",
   "success": true,
-  "projectFilePath": "/Users/tobiaskjaer/Repoes/DcHRallyProjekt/DcHRally/DcHRally.csproj",
+  "projectFilePath": "C:\\Users\\Minik\\source\\repos\\DcHRally\\DcHRally.csproj",
   "expectedPackageFiles": [
     "/Users/tobiaskjaer/.nuget/packages/azure.core/1.35.0/azure.core.1.35.0.nupkg.sha512",
     "/Users/tobiaskjaer/.nuget/packages/azure.identity/1.10.3/azure.identity.1.10.3.nupkg.sha512",
