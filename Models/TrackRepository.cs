@@ -1,26 +1,26 @@
-﻿using Microsoft.EntityFrameworkCore;
-using RallyBaneTest.Models;
+﻿using DcHRally.Areas.Identity.Data;
+using Microsoft.EntityFrameworkCore;
 
 namespace DcHRally.Models
 {
     public class TrackRepository : ITrackRepository
     {
-        private readonly RallyDbContext _rallyDbContext;
-        public TrackRepository(RallyDbContext rallyDbContext)
+        private readonly DcHRallyIdentityDbContext _dbContext;
+        public TrackRepository(DcHRallyIdentityDbContext dbContext)
         {
-            _rallyDbContext = rallyDbContext;
+            _dbContext = dbContext;
         }
         public IEnumerable<Track> AllTracks
         {
             get
             {
-                return _rallyDbContext.Tracks.Include(t => t.User);
+                return _dbContext.Tracks.Include(t => t.User);
             }
         }
 
         public Track? GetTrackById(int trackId)
         {
-            return _rallyDbContext.Tracks.FirstOrDefault(t => t.TrackId == trackId);
+            return _dbContext.Tracks.FirstOrDefault(t => t.TrackId == trackId);
         }
     }
 }

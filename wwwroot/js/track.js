@@ -316,9 +316,9 @@ function clearStage() {
 function saveToJSON() {
     var konvaData = [];
     var trackName = document.getElementById('track-name').value;
-    konvaData.push(trackName);
+    /*konvaData.push(trackName);*/
     var category = document.getElementById('category-selector').value;
-    konvaData.push(category);
+    /*konvaData.push(category);*/
 
     var children = signLayer.children;
     for (var i = 0; i < children.length; i++) {
@@ -357,12 +357,36 @@ function saveToJSON() {
 
     var jsonData = JSON.stringify(konvaData, null, 2);
 
-    var blob = new Blob([jsonData], { type: "application/json" });
+    var trackDto = ({
+        Category: category,
+        Name: trackName,
+        TrackData: konvaData
+    });
 
-    var a = document.createElement('a');
-    a.download = 'konva_data.json';
-    a.href = window.URL.createObjectURL(blob);
-    a.click();
+    //var blob = new Blob([jsonData], { type: "application/json" });
+
+    //var a = document.createElement('a');
+    //a.download = 'konva_data.json';
+    //a.href = window.URL.createObjectURL(blob);
+    //a.click();
+
+    const token = $('input[name="__RequestVerificationToken"]').val();
+
+    $.ajax({
+        url: '/Track/SaveTrack',
+        type: 'POST',
+        contentType: 'application/json',
+        data: JSON.stringify(trackDto),
+        headers: {
+            'RequestVerificationToken': token
+        },
+        success: function (response) {
+            console.log('Track saved:', trackDto);
+        },
+        error: function (error) {
+            console.error('Failed to save track:', error, trackDto);
+        }
+    });
 }
 
 // ---- LOAD ----
@@ -372,8 +396,8 @@ function loadFromJSON(jsonData) {
 
     var trackName = jsonArray[0];
     document.getElementById('track-name').value = trackName;
-    var trackName = jsonArray[1];
-    document.getElementById('category-selector').value = trackName;
+    var trackCategory = jsonArray[1];
+    document.getElementById('category-selector').value = trackCategory;
     jsonArray.splice(0, 2);
 
     jsonArray.forEach(obj => {
