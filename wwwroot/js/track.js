@@ -316,61 +316,42 @@ function clearStage() {
 function saveToJSON() {
     var konvaData = [];
     var trackName = document.getElementById('track-name').value;
-    /*konvaData.push(trackName);*/
     var category = document.getElementById('category-selector').value;
-    /*konvaData.push(category);*/
 
     var children = signLayer.children;
     for (var i = 0; i < children.length; i++) {
         var shape = children[i];
-        if (shape.name() === 'Sign') {
+        if (shape.name() === 'Sign' || shape.name() === 'Element') {
             var data = {
-                id: shape.id(),
-                name: shape.name(),
-                height: shape.height(),
-                rotation: shape.rotation(),
-                stroke: shape.stroke(),
-                strokeWidth: shape.strokeWidth(),
-                offsetX: shape.offsetX(),
-                offsetY: shape.offsetY(),
-                x: shape.x(),
-                y: shape.y(),
-                src: shape.attrs.image.src,
-                draggable: 'true',
-            };
-            konvaData.push(data);
-        } else if (shape.name() === 'Element') {            
-            var data = {
-                name: shape.name(),
-                height: shape.height(),
-                rotation: shape.rotation(),
-                offsetX: shape.offsetX(),
-                offsetY: shape.offsetY(),
-                x: shape.x(),
-                y: shape.y(),
-                src: shape.attrs.image.src,
-                draggable: 'true',
+                Id: shape.id(),
+                Name: shape.name(),
+                Height: shape.height(),
+                Rotation: shape.rotation(),
+                Stroke: shape.stroke(),
+                StrokeWidth: shape.strokeWidth(),
+                OffsetX: shape.offsetX(),
+                OffsetY: shape.offsetY(),
+                X: shape.x(),
+                Y: shape.y(),
+                Src: shape.attrs.image.src,
+                Draggable: 'true'
             };
             konvaData.push(data);
         }
     }
 
-    var jsonData = JSON.stringify(konvaData, null, 2);
-
-    var trackDto = ({
+    var trackDto = {
         Category: category,
         Name: trackName,
         TrackData: konvaData
-    });
+    };
 
-    //var blob = new Blob([jsonData], { type: "application/json" });
-
-    //var a = document.createElement('a');
-    //a.download = 'konva_data.json';
-    //a.href = window.URL.createObjectURL(blob);
-    //a.click();
+    var t = JSON.stringify(trackDto);
+    console.log(t);
 
     const token = $('input[name="__RequestVerificationToken"]').val();
+
+    console.log('Verification Token:', token);
 
     $.ajax({
         url: '/Track/SaveTrack',

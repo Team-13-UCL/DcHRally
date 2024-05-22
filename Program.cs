@@ -54,6 +54,8 @@ using (var scope = app.Services.CreateScope())
     }
 }
 
+
+
 app.UseHttpsRedirection();
 
 app.UseStaticFiles();
@@ -68,6 +70,7 @@ app.MapControllerRoute(
     pattern: "{controller=Home}/{action=Index}/{id?}");
 
 app.MapRazorPages();
+
 
 
 // Seed custom roles during application startup
