@@ -73,6 +73,7 @@ app.MapControllerRoute(
 app.MapRazorPages();
 
 
+
 // Seed custom roles during application startup
 using (var scope = app.Services.CreateScope())
 {
