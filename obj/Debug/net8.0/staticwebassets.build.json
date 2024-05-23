@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "CitoIHpnJfR8spAV/3WaAqRsOA3Rgkl1D+G8bzh6pBM=",
+  "Hash": "JsK2kI87aOGuPlNEf2HpS139ZubeRAlQRQHTmlT3fNk=",
   "Source": "DcHRally",
   "BasePath": "_content/DcHRally",
   "Mode": "Default",
@@ -17,45 +17,7 @@
   ],
   "Assets": [
     {
-      "Identity": "C:\\Users\\Minik\\.nuget\\packages\\microsoft.aspnetcore.components.quickgrid\\8.0.4\\staticwebassets\\Microsoft.AspNetCore.Components.QuickGrid.bundle.scp.css",
-      "SourceId": "Microsoft.AspNetCore.Components.QuickGrid",
-      "SourceType": "Package",
-      "ContentRoot": "C:\\Users\\Minik\\.nuget\\packages\\microsoft.aspnetcore.components.quickgrid\\8.0.4\\staticwebassets\\",
-      "BasePath": "_content/Microsoft.AspNetCore.Components.QuickGrid",
-      "RelativePath": "Microsoft.AspNetCore.Components.QuickGrid.bundle.scp.css",
-      "AssetKind": "All",
-      "AssetMode": "Reference",
-      "AssetRole": "Primary",
-      "AssetMergeBehavior": "",
-      "AssetMergeSource": "",
-      "RelatedAsset": "",
-      "AssetTraitName": "ScopedCss",
-      "AssetTraitValue": "ProjectBundle",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\Minik\\.nuget\\packages\\microsoft.aspnetcore.components.quickgrid\\8.0.4\\staticwebassets\\Microsoft.AspNetCore.Components.QuickGrid.bundle.scp.css"
-    },
-    {
-      "Identity": "C:\\Users\\Minik\\.nuget\\packages\\microsoft.aspnetcore.components.quickgrid\\8.0.4\\staticwebassets\\QuickGrid.razor.js",
-      "SourceId": "Microsoft.AspNetCore.Components.QuickGrid",
-      "SourceType": "Package",
-      "ContentRoot": "C:\\Users\\Minik\\.nuget\\packages\\microsoft.aspnetcore.components.quickgrid\\8.0.4\\staticwebassets\\",
-      "BasePath": "_content/Microsoft.AspNetCore.Components.QuickGrid",
-      "RelativePath": "QuickGrid.razor.js",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "AssetMergeBehavior": "",
-      "AssetMergeSource": "",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\Minik\\.nuget\\packages\\microsoft.aspnetcore.components.quickgrid\\8.0.4\\staticwebassets\\QuickGrid.razor.js"
-    },
-    {
-      "Identity": "C:\\Users\\Minik\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\8.0.5\\staticwebassets\\V5\\css\\site.css",
+      "Identity": "/Users/tobiaskjaer/.nuget/packages/microsoft.aspnetcore.identity.ui/8.0.5/staticwebassets/V5/css/site.css",
       "SourceId": "Microsoft.AspNetCore.Identity.UI",
       "SourceType": "Package",
       "ContentRoot": "C:\\Users\\Minik\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\8.0.5\\staticwebassets\\V5\\",
@@ -1233,30 +1195,10 @@
       "OriginalItemSpec": "C:\\Users\\Minik\\source\\repos\\DcHRally\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\DcHRally.bundle.scp.css"
     },
     {
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< Updated upstream
-      "Identity": "C:\\Users\\Minik\\source\\repos\\DcHRally\\wwwroot\\css\\site.css",
-      "SourceId": "DcHRally",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Minik\\source\\repos\\DcHRally\\wwwroot\\",
-=======
-      "Identity": "C:\\Users\\Minik\\source\\repos\\DcHRally\\wwwroot\\css\\custom.css",
-      "SourceId": "DcHRally",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Minik\\source\\repos\\DcHRally\\wwwroot\\",
-=======
       "Identity": "/Users/tobiaskjaer/Repoes/DcHRallyProjekt/DcHRally/wwwroot/css/custom.css",
       "SourceId": "DcHRally",
       "SourceType": "Discovered",
       "ContentRoot": "/Users/tobiaskjaer/Repoes/DcHRallyProjekt/DcHRally/wwwroot/",
->>>>>>> origin/Track-Implementation
-=======
-      "Identity": "C:\\Users\\Minik\\source\\repos\\DcHRally\\wwwroot\\css\\custom.css",
-      "SourceId": "DcHRally",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Minik\\source\\repos\\DcHRally\\wwwroot\\",
->>>>>>> Track-Implementation
       "BasePath": "_content/DcHRally",
       "RelativePath": "css/custom.css",
       "AssetKind": "All",
@@ -1269,32 +1211,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-<<<<<<< HEAD
-<<<<<<< HEAD
-      "OriginalItemSpec": "wwwroot\\css\\custom.css"
-    },
-    {
-      "Identity": "C:\\Users\\Minik\\source\\repos\\DcHRally\\wwwroot\\css\\site.css",
-      "SourceId": "DcHRally",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Minik\\source\\repos\\DcHRally\\wwwroot\\",
->>>>>>> Stashed changes
-=======
       "OriginalItemSpec": "wwwroot/css/custom.css"
-=======
-      "OriginalItemSpec": "wwwroot\\css\\custom.css"
->>>>>>> Track-Implementation
     },
     {
       "Identity": "C:\\Users\\Minik\\source\\repos\\DcHRally\\wwwroot\\css\\site.css",
       "SourceId": "DcHRally",
       "SourceType": "Discovered",
-<<<<<<< HEAD
       "ContentRoot": "/Users/tobiaskjaer/Repoes/DcHRallyProjekt/DcHRally/wwwroot/",
->>>>>>> origin/Track-Implementation
-=======
-      "ContentRoot": "C:\\Users\\Minik\\source\\repos\\DcHRally\\wwwroot\\",
->>>>>>> Track-Implementation
       "BasePath": "_content/DcHRally",
       "RelativePath": "css/site.css",
       "AssetKind": "All",
@@ -1348,30 +1271,10 @@
       "OriginalItemSpec": "wwwroot\\favicon.ico"
     },
     {
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< Updated upstream
-      "Identity": "C:\\Users\\Minik\\source\\repos\\DcHRally\\wwwroot\\images\\obstacleElements\\Bom.png",
-      "SourceId": "DcHRally",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Minik\\source\\repos\\DcHRally\\wwwroot\\",
-=======
-      "Identity": "C:\\Users\\Minik\\source\\repos\\DcHRally\\wwwroot\\images\\dchlogo.png",
-      "SourceId": "DcHRally",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Minik\\source\\repos\\DcHRally\\wwwroot\\",
-=======
       "Identity": "/Users/tobiaskjaer/Repoes/DcHRallyProjekt/DcHRally/wwwroot/images/dchlogo.png",
       "SourceId": "DcHRally",
       "SourceType": "Discovered",
       "ContentRoot": "/Users/tobiaskjaer/Repoes/DcHRallyProjekt/DcHRally/wwwroot/",
->>>>>>> origin/Track-Implementation
-=======
-      "Identity": "C:\\Users\\Minik\\source\\repos\\DcHRally\\wwwroot\\images\\dchlogo.png",
-      "SourceId": "DcHRally",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Minik\\source\\repos\\DcHRally\\wwwroot\\",
->>>>>>> Track-Implementation
       "BasePath": "_content/DcHRally",
       "RelativePath": "images/dchlogo.png",
       "AssetKind": "All",
@@ -1384,27 +1287,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-<<<<<<< HEAD
-<<<<<<< HEAD
-      "OriginalItemSpec": "wwwroot\\images\\dchlogo.png"
+      "OriginalItemSpec": "wwwroot/images/dchlogo.png"
     },
     {
       "Identity": "C:\\Users\\Minik\\source\\repos\\DcHRally\\wwwroot\\images\\obstacleElements\\Bom.png",
       "SourceId": "DcHRally",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\Minik\\source\\repos\\DcHRally\\wwwroot\\",
->>>>>>> Stashed changes
-=======
-      "OriginalItemSpec": "wwwroot/images/dchlogo.png"
-=======
-      "OriginalItemSpec": "wwwroot\\images\\dchlogo.png"
->>>>>>> Track-Implementation
-    },
-    {
-      "Identity": "/Users/tobiaskjaer/Repoes/DcHRallyProjekt/DcHRally/wwwroot/images/FullTrackBuilder.png",
-      "SourceId": "DcHRally",
-      "SourceType": "Discovered",
-      "ContentRoot": "/Users/tobiaskjaer/Repoes/DcHRallyProjekt/DcHRally/wwwroot/",
       "BasePath": "_content/DcHRally",
       "RelativePath": "images/FullTrackBuilder.png",
       "AssetKind": "All",
@@ -1417,32 +1306,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/images/FullTrackBuilder.png"
+      "OriginalItemSpec": "wwwroot\\images\\obstacleElements\\Bom.png"
     },
     {
-      "Identity": "/Users/tobiaskjaer/Repoes/DcHRallyProjekt/DcHRally/wwwroot/images/obstacleElements/Bom.png",
+      "Identity": "C:\\Users\\Minik\\source\\repos\\DcHRally\\wwwroot\\images\\obstacleElements\\H.png",
       "SourceId": "DcHRally",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/tobiaskjaer/Repoes/DcHRallyProjekt/DcHRally/wwwroot/",
-      "BasePath": "_content/DcHRally",
-      "RelativePath": "images/FullTrackBuilder.png",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "AssetMergeBehavior": "PreferTarget",
-      "AssetMergeSource": "",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/images/obstacleElements/Bom.png"
-    },
-    {
-      "Identity": "/Users/tobiaskjaer/Repoes/DcHRallyProjekt/DcHRally/wwwroot/images/obstacleElements/H.png",
-      "SourceId": "DcHRally",
-      "SourceType": "Discovered",
-      "ContentRoot": "/Users/tobiaskjaer/Repoes/DcHRallyProjekt/DcHRally/wwwroot/",
+      "ContentRoot": "C:\\Users\\Minik\\source\\repos\\DcHRally\\wwwroot\\",
       "BasePath": "_content/DcHRally",
       "RelativePath": "images/obstacleElements/H.png",
       "AssetKind": "All",
@@ -1515,29 +1385,10 @@
       "OriginalItemSpec": "wwwroot\\images\\obstacleElements\\Tunnel.png"
     },
     {
-      "Identity": "/Users/tobiaskjaer/Repoes/DcHRallyProjekt/DcHRally/wwwroot/images/RallyAction.png",
+      "Identity": "C:\\Users\\Minik\\source\\repos\\DcHRally\\wwwroot\\images\\RallyBane.png",
       "SourceId": "DcHRally",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/tobiaskjaer/Repoes/DcHRallyProjekt/DcHRally/wwwroot/",
-      "BasePath": "_content/DcHRally",
-      "RelativePath": "images/RallyAction.png",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "AssetMergeBehavior": "PreferTarget",
-      "AssetMergeSource": "",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/images/RallyAction.png"
-    },
-    {
-      "Identity": "/Users/tobiaskjaer/Repoes/DcHRallyProjekt/DcHRally/wwwroot/images/RallyBane.png",
-      "SourceId": "DcHRally",
-      "SourceType": "Discovered",
-      "ContentRoot": "/Users/tobiaskjaer/Repoes/DcHRallyProjekt/DcHRally/wwwroot/",
+      "ContentRoot": "C:\\Users\\Minik\\source\\repos\\DcHRally\\wwwroot\\",
       "BasePath": "_content/DcHRally",
       "RelativePath": "images/RallyBane.png",
       "AssetKind": "All",
@@ -6607,10 +6458,10 @@
       "OriginalItemSpec": "wwwroot\\images\\text\\Names.txt"
     },
     {
-      "Identity": "/Users/tobiaskjaer/Repoes/DcHRallyProjekt/DcHRally/wwwroot/images/TrackBuilderCategory.png",
+      "Identity": "C:\\Users\\Minik\\source\\repos\\DcHRally\\wwwroot\\js\\obstacle.js",
       "SourceId": "DcHRally",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/tobiaskjaer/Repoes/DcHRallyProjekt/DcHRally/wwwroot/",
+      "ContentRoot": "C:\\Users\\Minik\\source\\repos\\DcHRally\\wwwroot\\",
       "BasePath": "_content/DcHRally",
       "RelativePath": "images/TrackBuilderCategory.png",
       "AssetKind": "All",
@@ -6623,13 +6474,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/images/TrackBuilderCategory.png"
+      "OriginalItemSpec": "wwwroot\\js\\obstacle.js"
     },
     {
-      "Identity": "/Users/tobiaskjaer/Repoes/DcHRallyProjekt/DcHRally/wwwroot/images/TrackBuilderExample.png",
+      "Identity": "C:\\Users\\Minik\\source\\repos\\DcHRally\\wwwroot\\js\\site.js",
       "SourceId": "DcHRally",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/tobiaskjaer/Repoes/DcHRallyProjekt/DcHRally/wwwroot/",
+      "ContentRoot": "C:\\Users\\Minik\\source\\repos\\DcHRally\\wwwroot\\",
       "BasePath": "_content/DcHRally",
       "RelativePath": "images/TrackBuilderExample.png",
       "AssetKind": "All",
@@ -6642,10 +6493,10 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/images/TrackBuilderExample.png"
+      "OriginalItemSpec": "wwwroot\\js\\site.js"
     },
     {
-      "Identity": "/Users/tobiaskjaer/Repoes/DcHRallyProjekt/DcHRally/wwwroot/images/TrackBuilderWithOrder.png",
+      "Identity": "C:\\Users\\Minik\\source\\repos\\DcHRally\\wwwroot\\js\\track.js",
       "SourceId": "DcHRally",
       "SourceType": "Discovered",
       "ContentRoot": "/Users/tobiaskjaer/Repoes/DcHRallyProjekt/DcHRally/wwwroot/",
@@ -6669,7 +6520,7 @@
       "SourceType": "Discovered",
       "ContentRoot": "/Users/tobiaskjaer/Repoes/DcHRallyProjekt/DcHRally/wwwroot/",
       "BasePath": "_content/DcHRally",
-      "RelativePath": "images/TrackBuilderCategory.png",
+      "RelativePath": "js/obstacle.js",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -6688,7 +6539,7 @@
       "SourceType": "Discovered",
       "ContentRoot": "/Users/tobiaskjaer/Repoes/DcHRallyProjekt/DcHRally/wwwroot/",
       "BasePath": "_content/DcHRally",
-      "RelativePath": "images/TrackBuilderExample.png",
+      "RelativePath": "js/site.js",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
