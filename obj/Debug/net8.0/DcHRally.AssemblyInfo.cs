@@ -15,22 +15,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("DcHRally")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-<<<<<<< Updated upstream
-<<<<<<< HEAD
-<<<<<<< HEAD
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+7e4d6e57d9ff43fbf524c27f9d0f47f8556c8ad2")]
-=======
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+178468ed03b14562206293f8eb7281792cdc3879")]
->>>>>>> Track-Implementation
-=======
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+0bb34797bd623af80e1e349ae40ff5b2bbe5ca9e")]
-=======
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+178468ed03b14562206293f8eb7281792cdc3879")]
->>>>>>> 0bb34797bd623af80e1e349ae40ff5b2bbe5ca9e
->>>>>>> Track-Implementation
-=======
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+d99ece83a43b8db49091f7ebed2ff9a496a96671")]
->>>>>>> Stashed changes
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+14833c2d0ac0de7d84ab2ea4b54328f5e3dc2af6")]
 [assembly: System.Reflection.AssemblyProductAttribute("DcHRally")]
 [assembly: System.Reflection.AssemblyTitleAttribute("DcHRally")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
