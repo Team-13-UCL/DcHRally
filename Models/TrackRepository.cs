@@ -14,7 +14,7 @@ namespace DcHRally.Models
         {
             get
             {
-                return _dbContext.Tracks.Include(t => t.User);
+                return _dbContext.Tracks.Include(t => t.UserId);
             }
         }
 

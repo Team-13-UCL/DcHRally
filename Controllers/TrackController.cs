@@ -91,7 +91,7 @@ public class TrackController : Controller
             Name = trackDto.Name,
             CategoryId = dtoCategory.CategoryId,
             TrackData = trackDto.TrackData,
-            User = user
+            UserId = user.Id
         };
 
         _context.Tracks.Add(track);
