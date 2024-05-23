@@ -3,13 +3,23 @@
     Layout = "_Layout";
 }
 
-<div class="text-center">
-    <div class="left-panel">
-        <img src="~/images/path-to-your-image.jpg" alt="Log ind" />
-        <h2>Log ind for at se dine baner</h2>
-    </div>
-    <div class="right-panel">
-        <img src="~/images/path-to-your-image.jpg" alt="Byg din egen bane" />
-        <h2>Byg din egen bane</h2>
+<div class="container text-center">
+    <div class="row">
+        <div class="col-md-6 left-panel">
+            <div class="image-container">
+                <img src="~/images/RallyAction.png" alt="Se Baneoversigten" class="zoom-image"/>
+                <div class="button-container">
+                    <button class="btn btn-primary" onclick="navigateToPage('@Url.Action("Index", "Home")', '@User.Identity.IsAuthenticated')">Se Baneoversigten</button>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6 right-panel">
+            <div class="image-container">
+                <img src="~/images/TrackBuilderExample.png" alt="Byg din egen bane" class="zoom-image"/>
+                <div class="button-container">
+                    <button class="btn btn-primary" onclick="navigateToPage('@Url.Action("Index", "Track")', '@User.Identity.IsAuthenticated')">Byg din egen bane</button>
+                </div>
+            </div>
+        </div>
     </div>
 </div>
