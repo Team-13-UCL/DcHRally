@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "KiV4Crj4bWwrnGhYPdypZQ7PPaQQwkgo5gZBSHj6+OW8+tuBw7+zyd9k2Cw4G/UGsL9YZ79rBViUNe9N+YfXLA==",
+  "dgSpecHash": "VC4HCPj79GInRmAcUlxZXQ6Q6VNSoLUYqWn3/io5eFO7MBfzrB3U4+16rxCXyX2z4ycskARKMuPpfLY6/WSlJw==",
   "success": true,
   "projectFilePath": "C:\\Users\\Minik\\source\\repos\\DcHRally\\DcHRally.csproj",
   "expectedPackageFiles": [
@@ -85,8 +85,8 @@
     "C:\\Users\\Minik\\.nuget\\packages\\microsoft.entityframeworkcore.analyzers\\8.0.5\\microsoft.entityframeworkcore.analyzers.8.0.5.nupkg.sha512",
     "C:\\Users\\Minik\\.nuget\\packages\\microsoft.entityframeworkcore.design\\8.0.5\\microsoft.entityframeworkcore.design.8.0.5.nupkg.sha512",
     "C:\\Users\\Minik\\.nuget\\packages\\microsoft.entityframeworkcore.relational\\8.0.5\\microsoft.entityframeworkcore.relational.8.0.5.nupkg.sha512",
-    "C:\\Users\\Minik\\.nuget\\packages\\microsoft.entityframeworkcore.sqlserver\\8.0.4\\microsoft.entityframeworkcore.sqlserver.8.0.4.nupkg.sha512",
-    "C:\\Users\\Minik\\.nuget\\packages\\microsoft.entityframeworkcore.tools\\8.0.4\\microsoft.entityframeworkcore.tools.8.0.4.nupkg.sha512",
+    "C:\\Users\\Minik\\.nuget\\packages\\microsoft.entityframeworkcore.sqlserver\\8.0.5\\microsoft.entityframeworkcore.sqlserver.8.0.5.nupkg.sha512",
+    "C:\\Users\\Minik\\.nuget\\packages\\microsoft.entityframeworkcore.tools\\8.0.5\\microsoft.entityframeworkcore.tools.8.0.5.nupkg.sha512",
     "C:\\Users\\Minik\\.nuget\\packages\\microsoft.extensions.caching.abstractions\\8.0.0\\microsoft.extensions.caching.abstractions.8.0.0.nupkg.sha512",
     "C:\\Users\\Minik\\.nuget\\packages\\microsoft.extensions.caching.memory\\8.0.0\\microsoft.extensions.caching.memory.8.0.0.nupkg.sha512",
     "C:\\Users\\Minik\\.nuget\\packages\\microsoft.extensions.configuration.abstractions\\8.0.0\\microsoft.extensions.configuration.abstractions.8.0.0.nupkg.sha512",
