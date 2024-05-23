@@ -343,11 +343,11 @@ function saveToJSON() {
     var trackDto = {
         Category: category,
         Name: trackName,
-        TrackData: konvaData
+        TrackData: JSON.stringify(konvaData)
     };
 
     var t = JSON.stringify(trackDto);
-    console.log(t);
+    console.log("trackDto: " + t);
 
     const token = $('input[name="__RequestVerificationToken"]').val();
 
@@ -362,10 +362,10 @@ function saveToJSON() {
             'RequestVerificationToken': token
         },
         success: function (response) {
-            console.log('Track saved:', trackDto);
+            console.log('Track saved:', t);
         },
         error: function (error) {
-            console.error('Failed to save track:', error, trackDto);
+            console.error('Failed to save track:', error, t);
         }
     });
 }

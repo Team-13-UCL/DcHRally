@@ -35,7 +35,7 @@ namespace RallyBaneTest.Migrations
 
                     b.HasKey("ObstacleElementId");
 
-                    b.ToTable("ObstacleElements");
+                    b.ToTable("ObstacleElements", (string)null);
                 });
 
             modelBuilder.Entity("RallyBaneTest.Models.Category", b =>
@@ -52,7 +52,7 @@ namespace RallyBaneTest.Migrations
 
                     b.HasKey("CategoryId");
 
-                    b.ToTable("Categories");
+                    b.ToTable("Categories", (string)null);
                 });
 
             modelBuilder.Entity("RallyBaneTest.Models.Obstacle", b =>
@@ -81,7 +81,7 @@ namespace RallyBaneTest.Migrations
 
                     b.HasIndex("CategoryId");
 
-                    b.ToTable("Obstacles");
+                    b.ToTable("Obstacles", (string)null);
                 });
 
             modelBuilder.Entity("RallyBaneTest.Models.Obstacle", b =>

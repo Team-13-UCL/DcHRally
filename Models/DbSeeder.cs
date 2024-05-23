@@ -16,6 +16,21 @@ namespace DcHRally.Models
 
         public void Seed()
         {
+            if (!_context.Categories.Any())
+            {
+                var categories = new List<Category>
+                {
+                    new Category { CategoryId = 1, Name = "Diverse" },
+                    new Category { CategoryId = 2, Name = "Begynder" },
+                    new Category { CategoryId = 3, Name = "Øvet" },
+                    new Category { CategoryId = 4, Name = "Ekspert" },
+                    new Category { CategoryId = 5, Name = "Champion" }
+                };
+
+                _context.Categories.AddRange(categories);
+                _context.SaveChanges();
+            }
+
             if (!_context.Obstacles.Any())
             {
                 var namesFilePath = Path.Combine(_hostingEnvironment.ContentRootPath, "wwwroot", "images", "text", "Names.txt");

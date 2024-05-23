@@ -289,7 +289,7 @@ namespace DcHRally.Migrations
 
                     b.HasKey("CategoryId");
 
-                    b.ToTable("Category");
+                    b.ToTable("Categories", (string)null);
                 });
 
             modelBuilder.Entity("DcHRally.Models.Track", b =>
