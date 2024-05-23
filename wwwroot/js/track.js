@@ -356,11 +356,11 @@ function saveToJSON() {
     var trackDto = {
         Category: category,
         Name: trackName,
-        TrackData: konvaData
+        TrackData: JSON.stringify(konvaData)
     };
 
     var t = JSON.stringify(trackDto);
-    console.log(t);
+    console.log("trackDto: " + t);
 
     const token = $('input[name="__RequestVerificationToken"]').val();
 
