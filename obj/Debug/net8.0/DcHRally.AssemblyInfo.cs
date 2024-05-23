@@ -15,7 +15,15 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("DcHRally")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
+<<<<<<< HEAD
 [assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+0bb34797bd623af80e1e349ae40ff5b2bbe5ca9e")]
+=======
+<<<<<<< HEAD
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+0bb34797bd623af80e1e349ae40ff5b2bbe5ca9e")]
+=======
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+178468ed03b14562206293f8eb7281792cdc3879")]
+>>>>>>> 0bb34797bd623af80e1e349ae40ff5b2bbe5ca9e
+>>>>>>> 5a649da0865b6b75d814e809bec124942162e67d
 [assembly: System.Reflection.AssemblyProductAttribute("DcHRally")]
 [assembly: System.Reflection.AssemblyTitleAttribute("DcHRally")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
