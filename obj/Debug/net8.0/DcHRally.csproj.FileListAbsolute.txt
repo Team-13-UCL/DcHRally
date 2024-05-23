@@ -396,6 +396,10 @@ C:/Users/Minik/Source/Repos/DcHRally/obj/Debug/net8.0/ref/DcHRally.dll
 <<<<<<< Updated upstream
 =======
 >>>>>>> origin/Track-Implementation
+<<<<<<< HEAD
+<<<<<<< Updated upstream
+=======
+>>>>>>> origin/Track-Implementation
 C:/Users/Minik/source/repos/DcHRally/bin/Debug/net8.0/Microsoft.AspNetCore.Cryptography.Internal.dll
 C:/Users/Minik/source/repos/DcHRally/bin/Debug/net8.0/Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
 C:/Users/Minik/source/repos/DcHRally/bin/Debug/net8.0/Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
@@ -527,7 +531,6 @@ C:/Users/Minik/source/repos/DcHRally/bin/Debug/net8.0/runtimes/win/lib/net7.0/Sy
 C:/Users/Minik/source/repos/DcHRally/bin/Debug/net8.0/runtimes/win/lib/net7.0/System.Windows.Extensions.dll
 C:/Users/Minik/source/repos/DcHRally/obj/Debug/net8.0/DcHRally.MvcApplicationPartsAssemblyInfo.cs
 >>>>>>> Stashed changes
->>>>>>> Track-Implementation
 C:\Users\Minik\source\repos\DcHRally\bin\Debug\net8.0\appsettings.Development.json
 C:\Users\Minik\source\repos\DcHRally\bin\Debug\net8.0\appsettings.json
 C:\Users\Minik\source\repos\DcHRally\bin\Debug\net8.0\DcHRally.staticwebassets.runtime.json
@@ -790,13 +793,3 @@ C:\Users\Minik\source\repos\DcHRally\obj\Debug\net8.0\refint\DcHRally.dll
 C:\Users\Minik\source\repos\DcHRally\obj\Debug\net8.0\DcHRally.pdb
 C:\Users\Minik\source\repos\DcHRally\obj\Debug\net8.0\DcHRally.genruntimeconfig.cache
 C:\Users\Minik\source\repos\DcHRally\obj\Debug\net8.0\ref\DcHRally.dll
-C:\Users\Minik\source\repos\DcHRally\bin\Debug\net8.0\Microsoft.AspNetCore.Authorization.dll
-C:\Users\Minik\source\repos\DcHRally\bin\Debug\net8.0\Microsoft.AspNetCore.Components.dll
-C:\Users\Minik\source\repos\DcHRally\bin\Debug\net8.0\Microsoft.AspNetCore.Components.Forms.dll
-C:\Users\Minik\source\repos\DcHRally\bin\Debug\net8.0\Microsoft.AspNetCore.Components.QuickGrid.dll
-C:\Users\Minik\source\repos\DcHRally\bin\Debug\net8.0\Microsoft.AspNetCore.Components.QuickGrid.EntityFrameworkAdapter.dll
-C:\Users\Minik\source\repos\DcHRally\bin\Debug\net8.0\Microsoft.AspNetCore.Components.Web.dll
-C:\Users\Minik\source\repos\DcHRally\bin\Debug\net8.0\Microsoft.AspNetCore.Metadata.dll
-C:\Users\Minik\source\repos\DcHRally\bin\Debug\net8.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
-C:\Users\Minik\source\repos\DcHRally\bin\Debug\net8.0\Microsoft.Extensions.Logging.Abstractions.dll
-C:\Users\Minik\source\repos\DcHRally\bin\Debug\net8.0\Microsoft.JSInterop.dll
