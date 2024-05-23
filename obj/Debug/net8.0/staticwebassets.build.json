@@ -1,6 +1,10 @@
 {
   "Version": 1,
+<<<<<<< Updated upstream
   "Hash": "9pmfMYE3YuMfxY4fp+Eg0uDVyyeSzMX3ukMp63YrTfg=",
+=======
+  "Hash": "JsK2kI87aOGuPlNEf2HpS139ZubeRAlQRQHTmlT3fNk=",
+>>>>>>> Stashed changes
   "Source": "DcHRally",
   "BasePath": "_content/DcHRally",
   "Mode": "Default",
@@ -1195,10 +1199,36 @@
       "OriginalItemSpec": "C:\\Users\\Minik\\source\\repos\\DcHRally\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\DcHRally.bundle.scp.css"
     },
     {
+<<<<<<< Updated upstream
       "Identity": "C:\\Users\\Minik\\source\\repos\\DcHRally\\wwwroot\\css\\site.css",
       "SourceId": "DcHRally",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\Minik\\source\\repos\\DcHRally\\wwwroot\\",
+=======
+      "Identity": "C:\\Users\\Minik\\source\\repos\\DcHRally\\wwwroot\\css\\custom.css",
+      "SourceId": "DcHRally",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Minik\\source\\repos\\DcHRally\\wwwroot\\",
+      "BasePath": "_content/DcHRally",
+      "RelativePath": "css/custom.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\custom.css"
+    },
+    {
+      "Identity": "C:\\Users\\Minik\\source\\repos\\DcHRally\\wwwroot\\css\\site.css",
+      "SourceId": "DcHRally",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Minik\\source\\repos\\DcHRally\\wwwroot\\",
+>>>>>>> Stashed changes
       "BasePath": "_content/DcHRally",
       "RelativePath": "css/site.css",
       "AssetKind": "All",
@@ -1252,10 +1282,36 @@
       "OriginalItemSpec": "wwwroot\\favicon.ico"
     },
     {
+<<<<<<< Updated upstream
       "Identity": "C:\\Users\\Minik\\source\\repos\\DcHRally\\wwwroot\\images\\obstacleElements\\Bom.png",
       "SourceId": "DcHRally",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\Minik\\source\\repos\\DcHRally\\wwwroot\\",
+=======
+      "Identity": "C:\\Users\\Minik\\source\\repos\\DcHRally\\wwwroot\\images\\dchlogo.png",
+      "SourceId": "DcHRally",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Minik\\source\\repos\\DcHRally\\wwwroot\\",
+      "BasePath": "_content/DcHRally",
+      "RelativePath": "images/dchlogo.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\dchlogo.png"
+    },
+    {
+      "Identity": "C:\\Users\\Minik\\source\\repos\\DcHRally\\wwwroot\\images\\obstacleElements\\Bom.png",
+      "SourceId": "DcHRally",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Minik\\source\\repos\\DcHRally\\wwwroot\\",
+>>>>>>> Stashed changes
       "BasePath": "_content/DcHRally",
       "RelativePath": "images/obstacleElements/Bom.png",
       "AssetKind": "All",

@@ -2,7 +2,7 @@
   "version": 2,
   "dgSpecHash": "KiV4Crj4bWwrnGhYPdypZQ7PPaQQwkgo5gZBSHj6+OW8+tuBw7+zyd9k2Cw4G/UGsL9YZ79rBViUNe9N+YfXLA==",
   "success": true,
-  "projectFilePath": "/Users/tobiaskjaer/Repoes/DcHRallyProjekt/DcHRally/DcHRally.csproj",
+  "projectFilePath": "C:\\Users\\Minik\\source\\repos\\DcHRally\\DcHRally.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Minik\\.nuget\\packages\\azure.core\\1.35.0\\azure.core.1.35.0.nupkg.sha512",
     "C:\\Users\\Minik\\.nuget\\packages\\azure.identity\\1.10.3\\azure.identity.1.10.3.nupkg.sha512",
@@ -177,7 +177,7 @@
       "code": "Undefined",
       "level": "Warning",
       "warningLevel": 1,
-      "message": "Problem reading the cache file C:\\Users\\Minik\\source\\repos\\DcHRally\\obj\\project.nuget.cache : After parsing a value an unexpected character was encountered: \". Path 'expectedPackageFiles[166]', line 175, position 4."
+      "message": "Problem reading the cache file C:\\Users\\Minik\\source\\repos\\DcHRally\\obj\\project.nuget.cache : Invalid property identifier character: <. Path 'version', line 3, position 0."
     }
   ]
 }
