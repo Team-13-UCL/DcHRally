@@ -15,14 +15,14 @@ public class DcHRallyIdentityDbContext : IdentityDbContext<ApplicationUser>
     public DbSet<Track> Tracks { get; set; }
     public DbSet<Category> Categories { get; set; }
 
-    protected override void OnModelCreating(ModelBuilder builder)
-    {
-        base.OnModelCreating(builder);
-        builder.Entity<Track>()
-            .HasOne(t => t.User)
-            .WithMany(u => u.Tracks);
+    //protected override void OnModelCreating(ModelBuilder builder)
+    //{
+    //    base.OnModelCreating(builder);
+    //    builder.Entity<Track>()
+    //        .HasOne(t => t.User)
+    //        .WithMany(u => u.Tracks);
 
-        builder.Entity<Category>()
-            .ToTable("Categories");
-    }
+    //    builder.Entity<Category>()
+    //        .ToTable("Categories");
+    //}
 }
