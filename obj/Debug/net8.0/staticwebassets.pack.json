@@ -21,8 +21,28 @@
       "PackagePath": "staticwebassets/favicon.ico"
     },
     {
+      "Id": "/Users/tobiaskjaer/Repoes/DcHRallyProjekt/DcHRally/wwwroot/images/FullTrackBuilder.png",
+      "PackagePath": "staticwebassets/images/FullTrackBuilder.png"
+    },
+    {
+      "Id": "/Users/tobiaskjaer/Repoes/DcHRallyProjekt/DcHRally/wwwroot/images/RallyAction.png",
+      "PackagePath": "staticwebassets/images/RallyAction.png"
+    },
+    {
       "Id": "/Users/tobiaskjaer/Repoes/DcHRallyProjekt/DcHRally/wwwroot/images/RallyBane.png",
       "PackagePath": "staticwebassets/images/RallyBane.png"
+    },
+    {
+      "Id": "/Users/tobiaskjaer/Repoes/DcHRallyProjekt/DcHRally/wwwroot/images/TrackBuilderCategory.png",
+      "PackagePath": "staticwebassets/images/TrackBuilderCategory.png"
+    },
+    {
+      "Id": "/Users/tobiaskjaer/Repoes/DcHRallyProjekt/DcHRally/wwwroot/images/TrackBuilderExample.png",
+      "PackagePath": "staticwebassets/images/TrackBuilderExample.png"
+    },
+    {
+      "Id": "/Users/tobiaskjaer/Repoes/DcHRallyProjekt/DcHRally/wwwroot/images/TrackBuilderWithOrder.png",
+      "PackagePath": "staticwebassets/images/TrackBuilderWithOrder.png"
     },
     {
       "Id": "/Users/tobiaskjaer/Repoes/DcHRallyProjekt/DcHRally/wwwroot/images/dchlogo.png",
