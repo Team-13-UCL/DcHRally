@@ -17,10 +17,10 @@ public class TrackController : Controller
     private IObstacleElementRepository _obstacleElementRepository;
     private ITrackRepository _trackRepository;
     private readonly UserManager<ApplicationUser> _userManager;
-    private readonly DcHRallyIdentityDbContext _context;
+    private readonly RallyDbContext _context;
 
 
-    public TrackController(IObstacleRepository obstacleRepository, ICategoryRepository categoryRepository, IObstacleElementRepository obstacleElementRepository, ITrackRepository trackRepository, UserManager<ApplicationUser> userManager, DcHRallyIdentityDbContext context)
+    public TrackController(IObstacleRepository obstacleRepository, ICategoryRepository categoryRepository, IObstacleElementRepository obstacleElementRepository, ITrackRepository trackRepository, UserManager<ApplicationUser> userManager, RallyDbContext context)
     {
         _obstacleRepository = obstacleRepository;
         _categoryRepository = categoryRepository;
@@ -30,8 +30,7 @@ public class TrackController : Controller
         _context = context;
     }
 
-    [HttpGet]
-    [HttpPost]
+
     public IActionResult Index(string category, int trackId)
     {
         IEnumerable<Obstacle> obstacles;
