@@ -45,3 +45,22 @@ body {
     height: 40px; /* Adjust the height of the separator */
     margin: 0 10px; /* Adjust the margin around the separator */
 }
+
+/* New styles for the front page panels */
+.left-panel, .right-panel {
+    width: 50%;
+    float: left;
+    padding: 20px; /* Adjust padding as needed */
+}
+
+.left-panel img, .right-panel img {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+.left-panel h2, .right-panel h2 {
+    text-align: center;
+    margin-top: 10px;
+}

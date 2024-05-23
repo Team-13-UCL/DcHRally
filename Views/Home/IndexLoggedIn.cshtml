@@ -1,0 +1,26 @@
+@using DcHRally.Areas.Identity.Data
+@using Microsoft.AspNetCore.Identity;
+
+@inject SignInManager<ApplicationUser> SignInManager
+@inject UserManager<ApplicationUser> UserManager
+
+@{
+    ViewData["Title"] = "Home Page";
+    Layout = "_Layout";
+}
+
+<div class="text-center">
+    <div class="left-panel">
+        <h2>Mine baner</h2>
+        <ul>
+            @* Iterate over user-specific courses here *@
+            <li>Bane 1</li>
+            <li>Bane 2</li>
+            <li>Bane 3</li>
+        </ul>
+    </div>
+    <div class="right-panel">
+        <img src="~/images/TrackBuilderExample.png" alt="Byg din egen bane" />
+        <h2>Byg din egen bane</h2>
+    </div>
+</div>
