@@ -9,18 +9,24 @@
     Layout = "_Layout";
 }
 
-<div class="text-center">
-    <div class="left-panel">
-        <h2>Mine baner</h2>
-        <ul>
-            @* Iterate over user-specific courses here *@
-            <li>Bane 1</li>
-            <li>Bane 2</li>
-            <li>Bane 3</li>
-        </ul>
-    </div>
-    <div class="right-panel">
-        <img src="~/images/TrackBuilderExample.png" alt="Byg din egen bane" />
-        <h2>Byg din egen bane</h2>
+<div class="container text-center">
+    <div class="row">
+        <div class="col-md-6 left-panel">
+            <h2>Mine baner</h2>
+            <ul id="course-list" class="course-list">
+                <!-- Iterate over user-specific courses here -->
+                <li>Min første bane</li>
+                <li>Min anden bane</li>
+                <li>Min tredje bane</li>
+            </ul>
+        </div>
+        <div class="col-md-6 right-panel">
+            <div class="image-container">
+                <img src="~/images/TrackBuilderExample.png" alt="Byg din egen bane" class="zoom-image" />
+                <div class="button-container">
+                    <button class="btn btn-primary" onclick="navigateToPage('@Url.Action("Index", "Track")', '@User.Identity.IsAuthenticated')">Byg din egen bane</button>
+                </div>
+            </div>
+        </div>
     </div>
 </div>
