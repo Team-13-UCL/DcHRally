@@ -1,7 +1,6 @@
 using DcHRally.Areas.Identity.Data;
 using DcHRally.Models;
 using Microsoft.AspNetCore.Authorization;
-using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using RallyBaneTest.Models;
@@ -11,31 +10,27 @@ using System.Diagnostics;
 namespace RallyBaneTest.Controllers;
 
 [Authorize]
-[Authorize]
 public class TrackController : Controller
 {
     private IObstacleRepository _obstacleRepository;
     private ICategoryRepository _categoryRepository;
     private IObstacleElementRepository _obstacleElementRepository;
     private ITrackRepository _trackRepository;
-    private ITrackRepository _trackRepository;
     private readonly UserManager<ApplicationUser> _userManager;
     private readonly RallyDbContext _context;
 
 
-    public TrackController(IObstacleRepository obstacleRepository, ICategoryRepository categoryRepository, IObstacleElementRepository obstacleElementRepository, ITrackRepository trackRepository, UserManager<ApplicationUser> userManager, DcHRallyIdentityDbContext context)
+    public TrackController(IObstacleRepository obstacleRepository, ICategoryRepository categoryRepository, IObstacleElementRepository obstacleElementRepository, ITrackRepository trackRepository, UserManager<ApplicationUser> userManager, RallyDbContext context)
     {
         _obstacleRepository = obstacleRepository;
         _categoryRepository = categoryRepository;
         _obstacleElementRepository = obstacleElementRepository;
         _trackRepository = trackRepository;
-        _trackRepository = trackRepository;
         _userManager = userManager;
         _context = context;
     }
 
-    [HttpGet]
-    [HttpPost]
+
     public IActionResult Index(string category, int trackId)
     {
         IEnumerable<Obstacle> obstacles;
@@ -47,12 +42,7 @@ public class TrackController : Controller
         {
             loadedTrack = _trackRepository.GetTrackById(trackId);
         }
-        Track? loadedTrack = null;
-
-        if (trackId > 0)
-        {
-            loadedTrack = _trackRepository.GetTrackById(trackId);
-        }
+        
 
         obstacleElements = _obstacleElementRepository.AllObstacleElements;
         if (string.IsNullOrEmpty(category))
@@ -67,7 +57,6 @@ public class TrackController : Controller
             currentCategory = _categoryRepository.AllCategories.FirstOrDefault(c => c.Name == category)?.Name;
         }
 
-        return View(new ObstacleViewModel(obstacles, currentCategory, obstacleElements, loadedTrack));
         return View(new ObstacleViewModel(obstacles, currentCategory, obstacleElements, loadedTrack));
     }
 
@@ -84,7 +73,6 @@ public class TrackController : Controller
 
     [HttpPost]
     public async Task<IActionResult> SaveTrack([FromBody] TrackDto trackDto)
-    public async Task<IActionResult> SaveTrack([FromBody] TrackDto trackDto)
     {
         if (trackDto == null)
         {
@@ -97,13 +85,7 @@ public class TrackController : Controller
             return Unauthorized();
         }
 
-        if (trackDto.TrackData == null)
-        {
-            return BadRequest("TrackData is missing");
-            return BadRequest("TrackData is missing");
-        }
 
-        var dtoCategory = _categoryRepository.AllCategories.FirstOrDefault(c => c.Name == trackDto.Category);
         var dtoCategory = _categoryRepository.AllCategories.FirstOrDefault(c => c.Name == trackDto.Category);
         if (dtoCategory == null)
         {

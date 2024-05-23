@@ -1,12 +1,12 @@
-﻿using DcHRally.Areas.Identity.Data;
-using Microsoft.EntityFrameworkCore;
+﻿using Microsoft.EntityFrameworkCore;
+using RallyBaneTest.Models;
 
 namespace DcHRally.Models
 {
     public class TrackRepository : ITrackRepository
     {
-        private readonly DcHRallyIdentityDbContext _dbContext;
-        public TrackRepository(DcHRallyIdentityDbContext dbContext)
+        private readonly RallyDbContext _dbContext;
+        public TrackRepository(RallyDbContext dbContext)
         {
             _dbContext = dbContext;
         }
