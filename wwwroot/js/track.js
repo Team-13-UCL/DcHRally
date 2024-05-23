@@ -53,7 +53,6 @@ stage.add(backgroundLayer);
 stage.add(arrowLayer);
 stage.add(signLayer);
 
-
 // ---- DRAG AND DROP FUNCTIONALITY ----
 
 // Handle drag and drop for sign images inside accordion containers
@@ -371,15 +370,12 @@ function saveToJSON() {
 }
 
 // ---- LOAD ----
-function loadFromJSON(jsonData) {
+window.loadFromJSON = function (trackName, trackCategory, trackData) {
     clearStage();
-    var jsonArray = JSON.parse(jsonData);    
-
-    var trackName = jsonArray[0];
+    var jsonArray = JSON.parse(trackData);    
+        
     document.getElementById('track-name').value = trackName;
-    var trackCategory = jsonArray[1];
     document.getElementById('category-selector').value = trackCategory;
-    jsonArray.splice(0, 2);
 
     jsonArray.forEach(obj => {
         let itemURL = obj.src;
@@ -394,13 +390,4 @@ function loadFromJSON(jsonData) {
         }
         createSign(isElement, itemURL, position, rotation);
     });
-}
-function handleFileInputChange(event) {
-    var file = event.target.files[0];
-    var reader = new FileReader();
-    reader.onload = function (event) {
-        var jsonData = event.target.result;
-        loadFromJSON(jsonData);
-    };
-    reader.readAsText(file);
 }

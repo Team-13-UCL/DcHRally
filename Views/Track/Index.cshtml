@@ -6,7 +6,8 @@
     Layout = "_Layout";
 }
 <head>
-    <link rel="stylesheet" href="~/css/trackStyle.css">
+    <link rel="stylesheet" href="~/css/trackStyle.css">4
+    
 </head>
 <form>
     @Html.AntiForgeryToken()
@@ -100,6 +101,14 @@
             </table>
         </div>
     </div>
+
+    @if (Model != null && Model.LoadedTrack != null)
+    {
+        <script type="text/javascript">
+            loadFromJSON('@Model.LoadedTrack.Name', @Model.LoadedTrack.CategoryId, 'Model.LoadedTrack.TrackData');
+        </script>
+    }
+
 
     <!-- Right Section: Buttons -->
     <div class="col-md-1">

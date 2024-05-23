@@ -8,12 +8,14 @@ namespace RallyBaneTest.ViewModels
         public IEnumerable<Obstacle> Obstacles { get; }
         public IEnumerable<ObstacleElement> ObstacleElements { get; }
         public string? CurrentCategory { get; }
+        public Track? LoadedTrack { get; }
 
-        public ObstacleViewModel(IEnumerable<Obstacle> obstacles, string? currentCategory, IEnumerable<ObstacleElement> obstacleElements)
+        public ObstacleViewModel(IEnumerable<Obstacle> obstacles, string? currentCategory, IEnumerable<ObstacleElement> obstacleElements, Track? loadedTrack)
         {
             Obstacles = obstacles;
             CurrentCategory = currentCategory;
             ObstacleElements = obstacleElements;
+            LoadedTrack = loadedTrack;
         }
     }
 }

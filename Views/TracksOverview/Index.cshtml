@@ -33,11 +33,11 @@
             <td>
                 @Html.DisplayFor(modelItem => item.Name)
             </td>
-            <td>
+            @* <td>
                 @Html.DisplayFor(modelItem => item.TrackData)
-            </td>
+            </td> *@
             <td>
-                <a asp-action="Edit" asp-route-id="@item.TrackId">Edit</a> |
+                    <a asp-controller="Track" asp-route-id="@item.TrackId">Edit</a> |
                 <a asp-action="Details" asp-route-id="@item.TrackId">Details</a> |
                 <a asp-action="Delete" asp-route-id="@item.TrackId">Delete</a>
             </td>
