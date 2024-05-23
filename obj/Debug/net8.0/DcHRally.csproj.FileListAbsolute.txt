@@ -790,3 +790,13 @@ C:\Users\Minik\source\repos\DcHRally\obj\Debug\net8.0\refint\DcHRally.dll
 C:\Users\Minik\source\repos\DcHRally\obj\Debug\net8.0\DcHRally.pdb
 C:\Users\Minik\source\repos\DcHRally\obj\Debug\net8.0\DcHRally.genruntimeconfig.cache
 C:\Users\Minik\source\repos\DcHRally\obj\Debug\net8.0\ref\DcHRally.dll
+C:\Users\Minik\source\repos\DcHRally\bin\Debug\net8.0\Microsoft.AspNetCore.Authorization.dll
+C:\Users\Minik\source\repos\DcHRally\bin\Debug\net8.0\Microsoft.AspNetCore.Components.dll
+C:\Users\Minik\source\repos\DcHRally\bin\Debug\net8.0\Microsoft.AspNetCore.Components.Forms.dll
+C:\Users\Minik\source\repos\DcHRally\bin\Debug\net8.0\Microsoft.AspNetCore.Components.QuickGrid.dll
+C:\Users\Minik\source\repos\DcHRally\bin\Debug\net8.0\Microsoft.AspNetCore.Components.QuickGrid.EntityFrameworkAdapter.dll
+C:\Users\Minik\source\repos\DcHRally\bin\Debug\net8.0\Microsoft.AspNetCore.Components.Web.dll
+C:\Users\Minik\source\repos\DcHRally\bin\Debug\net8.0\Microsoft.AspNetCore.Metadata.dll
+C:\Users\Minik\source\repos\DcHRally\bin\Debug\net8.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Users\Minik\source\repos\DcHRally\bin\Debug\net8.0\Microsoft.Extensions.Logging.Abstractions.dll
+C:\Users\Minik\source\repos\DcHRally\bin\Debug\net8.0\Microsoft.JSInterop.dll

@@ -15,24 +15,33 @@ public class TrackController : Controller
     private IObstacleRepository _obstacleRepository;
     private ICategoryRepository _categoryRepository;
     private IObstacleElementRepository _obstacleElementRepository;
+    private ITrackRepository _trackRepository;
     private readonly UserManager<ApplicationUser> _userManager;
-    private readonly DcHRallyIdentityDbContext _context;
+    private readonly RallyDbContext _context;
 
 
-    public TrackController(IObstacleRepository obstacleRepository, ICategoryRepository categoryRepository, IObstacleElementRepository obstacleElementRepository, UserManager<ApplicationUser> userManager, DcHRallyIdentityDbContext context)
+    public TrackController(IObstacleRepository obstacleRepository, ICategoryRepository categoryRepository, IObstacleElementRepository obstacleElementRepository, ITrackRepository trackRepository, UserManager<ApplicationUser> userManager, RallyDbContext context)
     {
         _obstacleRepository = obstacleRepository;
         _categoryRepository = categoryRepository;
         _obstacleElementRepository = obstacleElementRepository;
+        _trackRepository = trackRepository;
         _userManager = userManager;
         _context = context;
     }
 
-    public IActionResult Index(string category)
+
+    public IActionResult Index(string category, int trackId)
     {
         IEnumerable<Obstacle> obstacles;
         IEnumerable<ObstacleElement> obstacleElements;
         string? currentCategory;
+        Track? loadedTrack = null;
+
+        if (trackId > 0)
+        {
+            loadedTrack = _trackRepository.GetTrackById(trackId);
+        }
 
         obstacleElements = _obstacleElementRepository.AllObstacleElements;
         if (string.IsNullOrEmpty(category))
@@ -47,7 +56,7 @@ public class TrackController : Controller
             currentCategory = _categoryRepository.AllCategories.FirstOrDefault(c => c.Name == category)?.Name;
         }
 
-        return View(new ObstacleViewModel(obstacles, currentCategory, obstacleElements));
+        return View(new ObstacleViewModel(obstacles, currentCategory, obstacleElements, loadedTrack));
     }
 
     public IActionResult Privacy()
@@ -91,7 +100,7 @@ public class TrackController : Controller
             Name = trackDto.Name,
             CategoryId = dtoCategory.CategoryId,
             TrackData = trackDto.TrackData,
-            User = user
+            UserId = user.Id
         };
 
         _context.Tracks.Add(track);
