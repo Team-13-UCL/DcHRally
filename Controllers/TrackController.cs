@@ -18,26 +18,35 @@ public class TrackController : Controller
     private ICategoryRepository _categoryRepository;
     private IObstacleElementRepository _obstacleElementRepository;
     private ITrackRepository _trackRepository;
+    private ITrackRepository _trackRepository;
     private readonly UserManager<ApplicationUser> _userManager;
     private readonly RallyDbContext _context;
 
 
-    public TrackController(IObstacleRepository obstacleRepository, ICategoryRepository categoryRepository, IObstacleElementRepository obstacleElementRepository, ITrackRepository trackRepository, UserManager<ApplicationUser> userManager, RallyDbContext context)
+    public TrackController(IObstacleRepository obstacleRepository, ICategoryRepository categoryRepository, IObstacleElementRepository obstacleElementRepository, ITrackRepository trackRepository, UserManager<ApplicationUser> userManager, DcHRallyIdentityDbContext context)
     {
         _obstacleRepository = obstacleRepository;
         _categoryRepository = categoryRepository;
         _obstacleElementRepository = obstacleElementRepository;
         _trackRepository = trackRepository;
+        _trackRepository = trackRepository;
         _userManager = userManager;
         _context = context;
     }
 
-
+    [HttpGet]
+    [HttpPost]
     public IActionResult Index(string category, int trackId)
     {
         IEnumerable<Obstacle> obstacles;
         IEnumerable<ObstacleElement> obstacleElements;
         string? currentCategory;
+        Track? loadedTrack = null;
+
+        if (trackId > 0)
+        {
+            loadedTrack = _trackRepository.GetTrackById(trackId);
+        }
         Track? loadedTrack = null;
 
         if (trackId > 0)
@@ -58,6 +67,7 @@ public class TrackController : Controller
             currentCategory = _categoryRepository.AllCategories.FirstOrDefault(c => c.Name == category)?.Name;
         }
 
+        return View(new ObstacleViewModel(obstacles, currentCategory, obstacleElements, loadedTrack));
         return View(new ObstacleViewModel(obstacles, currentCategory, obstacleElements, loadedTrack));
     }
 

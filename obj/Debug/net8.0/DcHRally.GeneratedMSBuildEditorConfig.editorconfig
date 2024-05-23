@@ -98,22 +98,26 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvVHJhY2svUHJpdmFjeS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/tobiaskjaer/Repoes/DcHRallyProjekt/DcHRally/Views/TracksOverview/Create.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3MvVHJhY2tzT3ZlcnZpZXcvQ3JlYXRlLmNzaHRtbA==
-build_metadata.AdditionalFiles.CssScope = 
-
+[/Users/tobiaskjaer/Repoes/DcHRallyProjekt/DcHRally/Views/TracksOverview/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvVHJhY2tzT3ZlcnZpZXcvRGVsZXRlLmNzaHRtbA==
 [/Users/tobiaskjaer/Repoes/DcHRallyProjekt/DcHRally/Views/TracksOverview/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvVHJhY2tzT3ZlcnZpZXcvRGVsZXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [/Users/tobiaskjaer/Repoes/DcHRallyProjekt/DcHRally/Views/TracksOverview/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvVHJhY2tzT3ZlcnZpZXcvRGV0YWlscy5jc2h0bWw=
+[/Users/tobiaskjaer/Repoes/DcHRallyProjekt/DcHRally/Views/TracksOverview/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvVHJhY2tzT3ZlcnZpZXcvRGV0YWlscy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [/Users/tobiaskjaer/Repoes/DcHRallyProjekt/DcHRally/Views/TracksOverview/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvVHJhY2tzT3ZlcnZpZXcvRWRpdC5jc2h0bWw=
+[/Users/tobiaskjaer/Repoes/DcHRallyProjekt/DcHRally/Views/TracksOverview/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvVHJhY2tzT3ZlcnZpZXcvRWRpdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
+[/Users/tobiaskjaer/Repoes/DcHRallyProjekt/DcHRally/Views/TracksOverview/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvVHJhY2tzT3ZlcnZpZXcvSW5kZXguY3NodG1s
 [/Users/tobiaskjaer/Repoes/DcHRallyProjekt/DcHRally/Views/TracksOverview/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvVHJhY2tzT3ZlcnZpZXcvSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
