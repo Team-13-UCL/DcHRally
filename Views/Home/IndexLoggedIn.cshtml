@@ -22,9 +22,11 @@
         </div>
         <div class="col-md-6 right-panel">
             <div class="image-container">
-                <img src="~/images/TrackBuilderExample.png" alt="Byg din egen bane" class="zoom-image" />
+                <a asp-area="" asp-controller="Track" asp-action="Index">
+                    <img src="~/images/TrackBuilderExample.png" alt="Byg din egen bane" class="zoom-image" />
+                </a>
                 <div class="button-container">
-                    <button class="btn btn-primary" onclick="navigateToPage('@Url.Action("Index", "Track")', '@User.Identity.IsAuthenticated')">Byg din egen bane</button>
+                    <a class="btn btn-primary" asp-area="" asp-controller="Track" asp-action="Index">Byg din egen bane</a>
                 </div>
             </div>
         </div>
