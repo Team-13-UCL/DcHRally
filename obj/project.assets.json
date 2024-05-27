@@ -8554,11 +8554,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Minik\\source\\repos\\DcHRally\\DcHRally.csproj",
+      "projectUniqueName": "C:\\Users\\Minik\\Source\\Repos\\DcHRally\\DcHRally.csproj",
       "projectName": "DcHRally",
-      "projectPath": "C:\\Users\\Minik\\source\\repos\\DcHRally\\DcHRally.csproj",
+      "projectPath": "C:\\Users\\Minik\\Source\\Repos\\DcHRally\\DcHRally.csproj",
       "packagesPath": "C:\\Users\\Minik\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Minik\\source\\repos\\DcHRally\\obj\\",
+      "outputPath": "C:\\Users\\Minik\\Source\\Repos\\DcHRally\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Minik\\AppData\\Roaming\\NuGet\\NuGet.Config",

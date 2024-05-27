@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "E2yrS7LA/EYXwxPdTMFxN52j3NwxrI46Tk1+DUZe0ex5lclnDnKF9X2mcd9wITfXIRtlDhxsLBvQ1uVZDR3aBQ==",
+  "dgSpecHash": "0twOcLHU7kHHwhQek4faqbiWO8O+bGhSFQhpiCE2w3GwLS/2rrIB96R8L5FZ15TUyawPR44iDZfy+50sxmlkIA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Minik\\source\\repos\\DcHRally\\DcHRally.csproj",
+  "projectFilePath": "C:\\Users\\Minik\\Source\\Repos\\DcHRally\\DcHRally.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Minik\\.nuget\\packages\\azure.core\\1.35.0\\azure.core.1.35.0.nupkg.sha512",
     "C:\\Users\\Minik\\.nuget\\packages\\azure.identity\\1.10.3\\azure.identity.1.10.3.nupkg.sha512",
