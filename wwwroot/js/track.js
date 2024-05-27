@@ -321,7 +321,20 @@ function saveToJSON() {
     for (var i = 0; i < children.length; i++) {
         var shape = children[i];
         if (shape.name() === 'Sign' || shape.name() === 'Element') {
+        if (shape.name() === 'Sign' || shape.name() === 'Element') {
             var data = {
+                Id: shape.id(),
+                Name: shape.name(),
+                Height: shape.height(),
+                Rotation: shape.rotation(),
+                Stroke: shape.stroke(),
+                StrokeWidth: shape.strokeWidth(),
+                OffsetX: shape.offsetX(),
+                OffsetY: shape.offsetY(),
+                X: shape.x(),
+                Y: shape.y(),
+                Src: shape.attrs.image.src,
+                Draggable: 'true'
                 Id: shape.id(),
                 Name: shape.name(),
                 Height: shape.height(),
@@ -340,6 +353,7 @@ function saveToJSON() {
     }
 
     var trackDto = {
+    var trackDto = {
         Category: category,
         Name: trackName,
         TrackData: JSON.stringify(konvaData)
@@ -349,6 +363,8 @@ function saveToJSON() {
     console.log("trackDto: " + t);
 
     const token = $('input[name="__RequestVerificationToken"]').val();
+
+    console.log('Verification Token:', token);
 
     console.log('Verification Token:', token);
 

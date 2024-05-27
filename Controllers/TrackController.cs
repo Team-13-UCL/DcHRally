@@ -42,6 +42,7 @@ public class TrackController : Controller
         {
             loadedTrack = _trackRepository.GetTrackById(trackId);
         }
+        
 
         obstacleElements = _obstacleElementRepository.AllObstacleElements;
         if (string.IsNullOrEmpty(category))
@@ -84,10 +85,6 @@ public class TrackController : Controller
             return Unauthorized();
         }
 
-        if (trackDto.TrackData == null)
-        {
-            return BadRequest("TrackData is missing");
-        }
 
         var dtoCategory = _categoryRepository.AllCategories.FirstOrDefault(c => c.Name == trackDto.Category);
         if (dtoCategory == null)

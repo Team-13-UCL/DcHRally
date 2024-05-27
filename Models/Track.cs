@@ -1,4 +1,4 @@
-﻿namespace DcHRally.Models
+namespace DcHRally.Models
 {
     public class Track
     {
