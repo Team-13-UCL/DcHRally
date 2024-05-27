@@ -1,4 +1,4 @@
-<sub>**Projekt Rally Lydighed af Team 13 bestående af Sebastian Engberg Riis Sørensen, Søren Skov Andersen, Minik Busk Langkjær og Tobias Kjær.**</sub>
+<sub>**Projekt Rally Lydighed af Team 13** bestående af Sebastian Engberg Riis Sørensen, Søren Skov Andersen, Minik Busk Langkjær og Tobias Kjær.</sub>
 
 ## **Overblik over projektet**
 
