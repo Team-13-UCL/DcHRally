@@ -1,5 +1,6 @@
 @using DcHRally.Areas.Identity.Data
 @using Microsoft.AspNetCore.Identity;
+@model RallyBaneTest.ViewModels.TrackViewModel
 
 @inject SignInManager<ApplicationUser> SignInManager
 @inject UserManager<ApplicationUser> UserManager
@@ -12,12 +13,11 @@
 <div class="container text-center">
     <div class="row">
         <div class="col-md-6 left-panel">
-            <h2>Mine baner</h2>
+            <h2>Mine nyeste baner</h2>
             <ul id="course-list" class="course-list">
-                <!-- Iterate over user-specific courses here -->
-                <li>Min første bane</li>
-                <li>Min anden bane</li>
-                <li>Min tredje bane</li>
+                @foreach(var track in Model.Tracks) {
+                    <li><a asp-controller="Track" asp-action="Edit" asp-route-id="@track.TrackId">@track.Name</a></li>
+                }
             </ul>
         </div>
         <div class="col-md-6 right-panel">

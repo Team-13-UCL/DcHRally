@@ -7,11 +7,11 @@ namespace RallyBaneTest.ViewModels
     {
 
 
-        public IEnumerable<Category> Categories { get; set; }
+        public IEnumerable<Category>? Categories { get; set; }
         public IEnumerable<Track>? Tracks { get; }
         public Track? Track { get; set; }
 
-        public TrackViewModel(IEnumerable<Category> categories, IEnumerable<Track>? tracks, Track? track)
+        public TrackViewModel(IEnumerable<Category>? categories, IEnumerable<Track>? tracks, Track? track)
         {
             Categories = categories;
             Tracks = tracks;
