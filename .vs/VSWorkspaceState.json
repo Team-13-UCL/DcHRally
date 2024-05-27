@@ -1,6 +1,17 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\Areas",
+    "\\Areas\\Identity",
+    "\\Areas\\Identity\\Data",
+    "\\Models",
+    "\\ViewModels",
+    "\\Views",
+    "\\Views\\Track",
+    "\\Views\\TracksOverview",
+    "\\wwwroot",
+    "\\wwwroot\\js"
   ],
+  "SelectedNode": "\\Views\\TracksOverview\\Index.cshtml",
   "PreviewInSolutionExplorer": false
 }

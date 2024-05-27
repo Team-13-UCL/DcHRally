@@ -345,13 +345,7 @@ function saveToJSON() {
     };
 
     var t = JSON.stringify(trackDto);
-    console.log("trackDto: " + t);
-
     const token = $('input[name="__RequestVerificationToken"]').val();
-
-    console.log('Verification Token:', token);
-
-    console.log('Verification Token:', token);
 
     $.ajax({
         url: '/Track/SaveTrack',

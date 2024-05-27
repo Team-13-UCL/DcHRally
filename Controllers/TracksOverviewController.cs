@@ -4,6 +4,7 @@ using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using RallyBaneTest.Models;
+using RallyBaneTest.ViewModels;
 
 namespace DcHRally.Controllers
 {
@@ -25,8 +26,10 @@ namespace DcHRally.Controllers
         public async Task<IActionResult> Index()
         {
             var user = await _userManager.GetUserAsync(User);
+            var tracks = _context.Tracks.Where(t => t.UserId == user.Id).ToList().OrderBy(t => t.Name);
+            var categories = _context.Categories.ToList();
 
-            return View(await _context.Tracks.Where(t => t.UserId == user.Id).ToListAsync());
+            return View(new TrackViewModel(categories, tracks, null));
         }
 
         // GET: TracksOverview/Details/5
@@ -43,8 +46,9 @@ namespace DcHRally.Controllers
             {
                 return NotFound();
             }
+            var categories = _context.Categories.ToList();
 
-            return View(track);
+            return View(new TrackViewModel(categories, null, track));
         }
 
         // GET: TracksOverview/Delete/5

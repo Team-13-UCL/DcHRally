@@ -1,45 +1,36 @@
-@model IEnumerable<DcHRally.Models.Track>
+@model RallyBaneTest.ViewModels.TrackViewModel
 
 @{
     ViewData["Title"] = "Index";
 }
 
-<h1>Index</h1>
+<h1>Gemte baner</h1>
 
-<p>
-    <a asp-action="Create">Create New</a>
-</p>
 <table class="table">
     <thead>
         <tr>
             <th>
-                @Html.DisplayNameFor(model => model.CategoryId)
+                Kategori
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.Name)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.TrackData)
+                Navn
             </th>
             <th></th>
         </tr>
     </thead>
     <tbody>
-@foreach (var item in Model) {
+@foreach (var item in Model.Tracks) {
         <tr>
             <td>
-                @Html.DisplayFor(modelItem => item.CategoryId)
+                @Model.Categories.FirstOrDefault(c => c.CategoryId == item.CategoryId)?.Name
             </td>
             <td>
                 @Html.DisplayFor(modelItem => item.Name)
-            </td>
-            @* <td>
-                @Html.DisplayFor(modelItem => item.TrackData)
-            </td> *@
+            </td>      
             <td>
-                <a asp-controller="Track" asp-action="Edit" asp-route-id="@item.TrackId">Edit</a> |
-                <a asp-action="Details" asp-route-id="@item.TrackId">Details</a> |
-                <a asp-action="Delete" asp-route-id="@item.TrackId">Delete</a>
+                <a asp-controller="Track" asp-action="Edit" asp-route-id="@item.TrackId">Redigér bane</a> |
+                <a asp-action="Details" asp-route-id="@item.TrackId">Detalier</a> |
+                <a asp-action="Delete" asp-route-id="@item.TrackId">Slet bane</a>
             </td>
         </tr>
 }

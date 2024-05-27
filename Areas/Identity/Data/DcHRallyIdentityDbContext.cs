@@ -17,7 +17,7 @@ public class DcHRallyIdentityDbContext : IdentityDbContext<ApplicationUser>
     //protected override void OnModelCreating(ModelBuilder builder)
     //{
     //    base.OnModelCreating(builder);
-    //    builder.Entity<Track>()
+    //    builder.Entity<Tracks>()
     //        .HasOne(t => t.User)
     //        .WithMany(u => u.Tracks);
 

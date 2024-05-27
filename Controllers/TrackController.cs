@@ -87,7 +87,7 @@ public class TrackController : Controller
     {
         if (trackDto == null)
         {
-            return BadRequest("Track JSON is null");
+            return BadRequest("Tracks JSON is null");
         }
 
         var user = await _userManager.GetUserAsync(User);

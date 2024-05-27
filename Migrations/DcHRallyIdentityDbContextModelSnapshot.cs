@@ -107,7 +107,7 @@ namespace DcHRally.Migrations
                     b.ToTable("AspNetUsers", (string)null);
                 });
 
-            modelBuilder.Entity("DcHRally.Models.Track", b =>
+            modelBuilder.Entity("DcHRally.Models.Tracks", b =>
                 {
                     b.Property<int>("TrackId")
                         .ValueGeneratedOnAdd()
@@ -292,7 +292,7 @@ namespace DcHRally.Migrations
                     b.ToTable("Categories", (string)null);
                 });
 
-            modelBuilder.Entity("DcHRally.Models.Track", b =>
+            modelBuilder.Entity("DcHRally.Models.Tracks", b =>
                 {
                     b.HasOne("RallyBaneTest.Models.Category", "Category")
                         .WithMany()
