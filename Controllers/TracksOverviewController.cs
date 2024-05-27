@@ -1,5 +1,4 @@
 ﻿using DcHRally.Areas.Identity.Data;
-using DcHRally.Models;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
@@ -45,79 +44,6 @@ namespace DcHRally.Controllers
                 return NotFound();
             }
 
-            return View(track);
-        }
-
-        // GET: TracksOverview/Create
-        public IActionResult Create()
-        {
-            return View();
-        }
-
-        // POST: TracksOverview/Create
-        // To protect from overposting attacks, enable the specific properties you want to bind to.
-        // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
-        [HttpPost]
-        [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("TrackId,CategoryId,Name,TrackData")] Track track)
-        {
-            if (ModelState.IsValid)
-            {
-                _context.Add(track);
-                await _context.SaveChangesAsync();
-                return RedirectToAction(nameof(Index));
-            }
-            return View(track);
-        }
-
-        // GET: TracksOverview/Edit/5
-        public async Task<IActionResult> Edit(int? id)
-        {
-            if (id == null)
-            {
-                return NotFound();
-            }
-
-            var track = await _context.Tracks.FindAsync(id);
-            if (track == null)
-            {
-                return NotFound();
-            }
-            return View(track);
-        }
-
-        // POST: TracksOverview/Edit/5
-        // To protect from overposting attacks, enable the specific properties you want to bind to.
-        // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
-        [HttpPost]
-        [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("TrackId,CategoryId,Name,TrackData")] Track track)
-        {
-            if (id != track.TrackId)
-            {
-                return NotFound();
-            }
-
-            if (ModelState.IsValid)
-            {
-                try
-                {
-                    _context.Update(track);
-                    await _context.SaveChangesAsync();
-                }
-                catch (DbUpdateConcurrencyException)
-                {
-                    if (!TrackExists(track.TrackId))
-                    {
-                        return NotFound();
-                    }
-                    else
-                    {
-                        throw;
-                    }
-                }
-                return RedirectToAction(nameof(Index));
-            }
             return View(track);
         }
 

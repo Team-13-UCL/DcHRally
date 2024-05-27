@@ -31,18 +31,11 @@ public class TrackController : Controller
     }
 
 
-    public IActionResult Index(string category, int trackId)
+    public IActionResult Index(string category)
     {
         IEnumerable<Obstacle> obstacles;
         IEnumerable<ObstacleElement> obstacleElements;
         string? currentCategory;
-        Track? loadedTrack = null;
-
-        if (trackId > 0)
-        {
-            loadedTrack = _trackRepository.GetTrackById(trackId);
-        }
-        
 
         obstacleElements = _obstacleElementRepository.AllObstacleElements;
         if (string.IsNullOrEmpty(category))
@@ -57,7 +50,25 @@ public class TrackController : Controller
             currentCategory = _categoryRepository.AllCategories.FirstOrDefault(c => c.Name == category)?.Name;
         }
 
-        return View(new ObstacleViewModel(obstacles, currentCategory, obstacleElements, loadedTrack));
+        return View(new ObstacleViewModel(obstacles, currentCategory, obstacleElements));
+    }
+    public IActionResult Edit(int id)
+    {
+        if (id == 0)
+        {
+            return NotFound();
+        }
+
+        var track = _trackRepository.GetTrackById(id);
+        if (track == null)
+        {
+            return NotFound();
+        }
+        IEnumerable<Obstacle> obstacles = _obstacleRepository.AllObstacles.OrderBy(o => o.ObstacleId);
+        IEnumerable<ObstacleElement> obstacleElements = _obstacleElementRepository.AllObstacleElements;
+        string currentCategory = "All obstacles";
+
+        return View(new ObstacleViewModel(obstacles, currentCategory, obstacleElements, track));
     }
 
     public IActionResult Privacy()

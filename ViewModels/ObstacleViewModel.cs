@@ -10,12 +10,12 @@ namespace RallyBaneTest.ViewModels
         public string? CurrentCategory { get; }
         public Track? LoadedTrack { get; }
 
-        public ObstacleViewModel(IEnumerable<Obstacle> obstacles, string? currentCategory, IEnumerable<ObstacleElement> obstacleElements, Track? loadedTrack)
+        public ObstacleViewModel(IEnumerable<Obstacle> obstacles, string? currentCategory, IEnumerable<ObstacleElement> obstacleElements, Track? track = null)
         {
             Obstacles = obstacles;
             CurrentCategory = currentCategory;
             ObstacleElements = obstacleElements;
-            LoadedTrack = loadedTrack;
+            LoadedTrack = track;
         }
     }
 }

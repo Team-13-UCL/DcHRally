@@ -102,25 +102,12 @@
         </div>
     </div>
 
-    @if (Model != null && Model.LoadedTrack != null)
-    {
-        <script type="text/javascript">
-            loadFromJSON('@Model.LoadedTrack.Name', @Model.LoadedTrack.CategoryId, 'Model.LoadedTrack.TrackData');
-        </script>
-    }
-
-
     <!-- Right Section: Buttons -->
     <div class="col-md-1">
         <h2>Info</h2>
         @* <button class="right-section-button" id="display-regulations">Reglement</button> *@
         <button class="right-section-button" id="clear-track" onclick="clearStage()">Ryd Bane</button>
-        <button class="right-section-button" id="save-track" onclick="saveToJSON()" >Gem Bane</button>
-        <label for="fileInput" class="custom-file-upload">
-            <span>Hent bane fra fil:</span>
-            <button type="button" onclick="document.getElementById('fileInput').click()">Choose File</button>
-            <input type="file" id="fileInput" onchange="handleFileInputChange(event)" style="display: none;">
-        </label>
+        <button class="right-section-button" id="save-track" onclick="saveToJSON()" >Gem Bane</button>        
     </div>
 </div>
 

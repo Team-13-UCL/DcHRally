@@ -371,24 +371,30 @@ function saveToJSON() {
 }
 
 // ---- LOAD ----
-window.loadFromJSON = function (trackName, trackCategory, trackData) {
+function loadFromJSON(trackName, trackCategory, trackData) {
     clearStage();
+    trackData = decodeHtmlEntities(trackData);
     var jsonArray = JSON.parse(trackData);    
         
     document.getElementById('track-name').value = trackName;
     document.getElementById('category-selector').value = trackCategory;
 
     jsonArray.forEach(obj => {
-        let itemURL = obj.src;
+        let itemURL = obj.Src;
         let position = {
-            x: obj.x,
-            y: obj.y
+            x: obj.X,
+            y: obj.Y
         };
-        let rotation = obj.rotation;
+        let rotation = obj.Rotation;
         let isElement = false;
-        if (obj.name === 'Element') {
+        if (obj.Name === 'Element') {
             isElement = true;
         }
         createSign(isElement, itemURL, position, rotation);
     });
+}
+function decodeHtmlEntities(str) {
+    var txt = document.createElement("textarea");
+    txt.innerHTML = str;
+    return txt.value;
 }
