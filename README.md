@@ -1,5 +1,7 @@
 <sub>**Projekt Rally Lydighed af Team 13** bestående af Sebastian Engberg Riis Sørensen, Søren Skov Andersen, Minik Busk Langkjær og Tobias Kjær.</sub>
 
+<sub>**OBS** Man skal være på VPN for at køre programmet, da vores applikation benytter vores UCL Team Database.</sub>
+
 ## **Overblik over projektet**
 
 Vores applikation er designet til entusiaster af **Hunde Rally Lydighed**, hvor brugere kan bygge og opdatere deres egne baner. Systemet tilbyder en brugervenlig platform for instruktører og dommere til at administrere deres træningsbaner og konkurrencer. For at se en demonstration af applikationen, kan du se vores **videodemonstration** her.
