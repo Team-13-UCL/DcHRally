@@ -814,3 +814,4 @@ C:\Users\Minik\Source\Repos\DcHRally\obj\Debug\net8.0\refint\DcHRally.dll
 C:\Users\Minik\Source\Repos\DcHRally\obj\Debug\net8.0\DcHRally.pdb
 C:\Users\Minik\Source\Repos\DcHRally\obj\Debug\net8.0\DcHRally.genruntimeconfig.cache
 C:\Users\Minik\Source\Repos\DcHRally\obj\Debug\net8.0\ref\DcHRally.dll
+C:\Users\Minik\Source\Repos\DcHRally\bin\Debug\net8.0\libman.json
