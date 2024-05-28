@@ -372,9 +372,12 @@ function loadFromJSON(trackName, trackCategory, trackData) {
         
     document.getElementById('track-name').value = trackName;
     document.getElementById('category-selector').value = trackCategory;
+    const currentHost = window.location.origin;
 
     jsonArray.forEach(obj => {
         let itemURL = obj.Src;
+        let updatedItemURL = itemURL.replace(/https?:\/\/[^\/]+/, currentHost);
+
         let position = {
             x: obj.X,
             y: obj.Y
@@ -384,7 +387,7 @@ function loadFromJSON(trackName, trackCategory, trackData) {
         if (obj.Name === 'Element') {
             isElement = true;
         }
-        createSign(isElement, itemURL, position, rotation);
+        createSign(isElement, updatedItemURL, position, rotation);
     });
 }
 function decodeHtmlEntities(str) {

@@ -1,8 +1,8 @@
 {
   "ExpandedNodes": [
     "",
-    "\\Controllers",
     "\\Models",
+    "\\Properties",
     "\\ViewModels",
     "\\Views",
     "\\Views\\Home",
@@ -11,6 +11,6 @@
     "\\wwwroot",
     "\\wwwroot\\js"
   ],
-  "SelectedNode": "\\Controllers\\HomeController.cs",
+  "SelectedNode": "\\wwwroot\\js\\track.js",
   "PreviewInSolutionExplorer": false
 }
