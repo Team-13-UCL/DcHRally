@@ -36,7 +36,7 @@ public class HomeController : Controller
         return View("IndexNotLoggedIn");
     }
 
-    [Authorize]
+    [Authorize(Roles = "Admin")]
     public IActionResult Privacy()
     {
         return View();
