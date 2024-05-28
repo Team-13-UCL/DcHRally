@@ -6,7 +6,7 @@
 
 Vores applikation er designet til entusiaster af **Hunde Rally Lydighed**, hvor brugere kan bygge og opdatere deres egne baner. Systemet tilbyder en brugervenlig platform for instruktører og dommere til at administrere deres træningsbaner og konkurrencer. For at se en demonstration af applikationen, kan du se vores **videodemonstration** her.
 
-[Se Team 13's Video Demonstration Here!](https://drive.google.com/file/d/19OH9zweXwlnJ_ADzK0mOfgE-FV8ogAuh/view?usp=sharing)
+[Se Team 13's Video Demonstration Her!](https://drive.google.com/file/d/19OH9zweXwlnJ_ADzK0mOfgE-FV8ogAuh/view?usp=sharing)
 
 ## **Systemudvikling**
 
