@@ -1,7 +1,7 @@
 @model RallyBaneTest.ViewModels.TrackViewModel
 
 @{
-    ViewData["Title"] = "Index";
+    ViewData["Title"] = "Mine baner";
 }
 
 <h1>Gemte baner</h1>
@@ -28,8 +28,8 @@
                 @Html.DisplayFor(modelItem => item.Name)
             </td>      
             <td>
-                <a asp-controller="Track" asp-action="Edit" asp-route-id="@item.TrackId">Redigér bane</a> |
-                <a asp-action="Details" asp-route-id="@item.TrackId">Detalier</a> |
+                <a asp-controller="Track" asp-action="Edit" asp-route-id="@item.TrackId">RedigÃ©r bane</a> |
+                <a asp-action="Details" asp-route-id="@item.TrackId">Detaljer</a> |
                 <a asp-action="Delete" asp-route-id="@item.TrackId">Slet bane</a>
             </td>
         </tr>
