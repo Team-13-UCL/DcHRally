@@ -1,6 +1,5 @@
 <sub>**Projekt Rally Lydighed af Team 13** bestående af Sebastian Engberg Riis Sørensen, Søren Skov Andersen, Minik Busk Langkjær og Tobias Kjær.</sub>
-
-<sub>**OBS** Man skal være på VPN for at køre programmet, da vores applikation benytter vores UCL Team Database.</sub>
+<sub>**OBS:** Man skal være på VPN for at køre programmet, da vores applikation benytter vores UCL Team Database.</sub>
 
 ## **Overblik over projektet**
 
